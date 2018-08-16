@@ -1,4 +1,4 @@
-AIY Projects and Experiments
+# AIY Projects and Experiments
 
 Repo that holds my projects and experiments using AIY kits for AI tests with raspberry hardware.
 
