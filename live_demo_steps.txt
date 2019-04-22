@@ -1,0 +1,24 @@
+-----vision-------
+
+sudo systemctl stop joy_detection_demo
+#cd /home/pi/AIY-projects-python/src/examples/vision
+/home/pi/AIY-projects-python/src/examples/vision/image_classification_camera.py
+/home/pi/AIY-projects-python/src/examples/vision/face_detection_camera.py
+/home/pi/aiyprojects-raspbian/src/examples/vision/object_detection.py 
+
+python3 /home/pi/AIY-projects-python/src/examples/vision/mobilenet_based_classifier.py --model_path ~/bees_retrained_graph.binaryproto --label_path ~/bees_retrained_labels.txt --input_height 160 --input_width 160 --input_layer input --output_layer final_result --preview
+
+python3 /home/pi/AIY-projects-python/src/examples/vision/mobilenet_based_classifier.py --model_path ~/lymph_retrained_graph.binaryproto --label_path ~/lymph_retrained_labels.txt --input_height 160 --input_width 160 --input_layer input --output_layer final_result --preview
+
+python3 /home/pi/AIY-projects-python/src/examples/vision/mobilenet_based_classifier.py --model_path ~/flowers_retrained_graph.binaryproto --label_path ~/flowers_retrained_labels.txt --input_height 160 --input_width 160 --input_layer input --output_layer final_result --preview
+
+python3 /home/pi/AIY-projects-python/src/examples/vision/mobilenet_based_classifier.py --model_path ~/20190111_mobilenet_crime_retrained_graph.binaryproto --label_path ~/crime_retrained_labels.txt --input_height 160 --input_width 160 --input_layer input --output_layer final_result --preview
+
+python3 /home/pi/mobilenet_based_classifier.py --model_path ~/20190111_mobilenet_crime_retrained_graph.binaryproto --label_path ~/crime_retrained_labels.txt --input_height 160 --input_width 160 --input_layer input --output_layer final_result --preview
+
+------voice
+url totito: https://alphatotito.firebaseapp.com/
+python3 /home/pi/AIY-voice-kit-python/src/examples/voice/assistant_grpc_demo.py --language es_mx --volume 50
+python3 /home/pi/AIY-voice-kit-python/src/examples/voice/assistant_library_demo.py
+python3 /home/pi/AIY-voice-kit-python/src/examples/voice/assistant_library_with_button_demo.py 
+python3 /home/pi/rl_totito/totito.py 
